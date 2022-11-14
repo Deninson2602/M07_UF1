@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="645dp"
+            android:inputType="text" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Compartir"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="249dp"
+        android:layout_height="193dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/la_enegia_en_la_vida_de_tu_cachorro" />
+
+    <GridLayout
+        android:layout_width="327dp"
+        android:layout_height="210dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="400dp"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:rowCount="2">
+
+        <TextView
+            android:layout_columnWeight="13"
+            android:text="Celda 1.1" />
+
+        <TextView
+            android:layout_width="119dp"
+            android:layout_columnWeight="1"
+            android:text="Celda 1.2" />
+
+        <TextView
+            android:layout_columnWeight="1"
+            android:text="Celda 1.3" />
+
+        <TextView
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="Celda 2.1" />
+
+        <TextView
+            android:layout_height="121dp"
+            android:layout_columnWeight="1"
+            android:text="Celda 2.2" />
+
+        <TextView
+            android:layout_columnWeight="1"
+            android:text="Celda 2.3" />
+
+        <TextView
+            android:layout_height="176dp"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:text="Celda doble de ancho 3.1" />
+
+        <TextView
+            android:layout_columnWeight="1"
+            android:text="Celda 3.2" />
+    </GridLayout>
+
+</FrameLayout>
